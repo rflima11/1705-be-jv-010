@@ -27,17 +27,28 @@ Se precisar de uma ideia:
 - [ ] **2 serviços**, cada um com **o seu banco**, como o emissor e o gravador do PIX.
 - [ ] **1 fila** entre eles: um serviço manda a mensagem e o outro recebe. Se a mesma mensagem chegar duas vezes, quem recebe grava uma vez só.
 - [ ] **1 cache**: o que ele guarda, por quanto tempo e quando apaga.
-- [ ] **1 README** com o que o sistema faz, um desenho dos serviços, como rodar e **por que** você escolheu cada coisa.
+- [ ] **ADRs** na pasta `docs/adr/`: um arquivo curto para cada decisão importante, com o que você escolheu, o que mais considerou e por quê.
+- [ ] **1 README** com o que o sistema faz, um desenho dos serviços e como rodar, dizendo o perfil (A, B ou C).
 
 Se sobrar tempo, você pode ir além: retry e DLQ, Kafka, SAGA ou teste de contrato. Nada disso é obrigatório.
 
-**Não conseguiu rodar na sua máquina?** Desenhe e explique no README. Ninguém perde nota por causa do ambiente.
+### Os perfis de execução
+
+Cada máquina tem as suas limitações. Por isso, você escolhe como o projeto vai rodar:
+
+| Perfil | Como roda |
+|---|---|
+| **A** | com Docker |
+| **B** | sem Docker, só com Java |
+| **C** | conceitual: desenhado e explicado, sem rodar tudo |
+
+**Ninguém perde nota por causa do ambiente.**
 
 ---
 
 ## 3. Como entregar
 
-Entregue um repositório no GitHub (ou um zip) com o código e o README.
+Entregue um repositório no GitHub (ou um zip) com o código, os ADRs e o README.
 
 Faça commits aos poucos, não tudo no último dia.
 
@@ -50,7 +61,7 @@ Faça commits aos poucos, não tudo no último dia.
 | Os serviços estão separados, cada um com o seu banco | 25 |
 | A fila: quem manda, quem recebe, e a mensagem repetida não duplica nada | 25 |
 | O cache: o que guarda, por quanto tempo e quando apaga | 25 |
-| As escolhas explicadas: por que assim e o que mais você considerou | 25 |
+| As escolhas explicadas nos ADRs: por que assim e o que mais você considerou | 25 |
 
 ---
 
@@ -58,7 +69,7 @@ Faça commits aos poucos, não tudo no último dia.
 
 Em uns 20 minutos:
 
-1. Mostre o projeto rodando (ou o desenho, se não rodou).
+1. Mostre o projeto rodando, dizendo o perfil (A, B ou C). No perfil C, mostre o desenho.
 2. Explique por que fez assim.
 3. Responda às perguntas.
 4. Conte se usou IA e o que conferiu à mão.
