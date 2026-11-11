@@ -87,7 +87,7 @@ Ninguém comanda. Cada serviço **reage** a um evento e **emite** o seu. A emiss
 | Risisco focal | Maestro é crítico | Cadeia opaca / cíclica |
 | Quando preferir | Fluxo com decisão complexa; **caminho crítico auditável** | Fluxo linear; **muitos reatores** |
 
-**A correção que vale para o contexto Caixa.** Dizer que "coreografia é muito comum" precisa de asterisco em domínio bancário regulado: o **caminho crítico do dinheiro** (uma saga de pagamento) costuma ser **orquestrado de propósito** — você quer um estado de transação auditável e observável num lugar só. A **coreografia brilha na periferia reativa**: notificação, antifraude e BI reagindo a `ComprovanteGravado`. A resposta madura é **mistura**: orquestre o núcleo, coreografe os reatores. A heurística da Aula 2 continua valendo — **comece orquestrado** (mais fácil de provar correto) e migre passos para coreografia conforme o desacoplamento justifique o custo de opacidade.
+**A correção que vale para o contexto bancário.** Dizer que "coreografia é muito comum" precisa de asterisco em domínio bancário regulado: o **caminho crítico do dinheiro** (uma saga de pagamento) costuma ser **orquestrado de propósito** — você quer um estado de transação auditável e observável num lugar só. A **coreografia brilha na periferia reativa**: notificação, antifraude e BI reagindo a `ComprovanteGravado`. A resposta madura é **mistura**: orquestre o núcleo, coreografe os reatores. A heurística da Aula 2 continua valendo — **comece orquestrado** (mais fácil de provar correto) e migre passos para coreografia conforme o desacoplamento justifique o custo de opacidade.
 
 ---
 
@@ -114,10 +114,10 @@ Aqui mora a pergunta que os colegas trouxeram. **Nada nesta seção decide os tr
 ### Broker (o transporte durável)
 Um **broker** guarda a mensagem de forma durável até alguém consumir: RabbitMQ, Kafka, IBM MQ, **Azure Service Bus**. É "burro" no bom sentido — ele transporta e entrega; a inteligência de negócio fica **nos serviços**. Esse é o modelo que o resto do módulo usa (Aulas 5–7).
 
-> **Sobre "Azure Service Bus" especificamente** (alvo de nuvem da Caixa): apesar do nome "bus", ele é um **broker gerenciado** — filas e tópicos como serviço. É saudável e moderno; **não** é um ESB pesado. Quando alguém na Caixa disser "vamos no Service Bus", quase sempre é isto: um broker na nuvem, equivalente em papel ao RabbitMQ/Kafka que veremos.
+> **Sobre "Azure Service Bus" especificamente** (nuvem da Microsoft): apesar do nome "bus", ele é um **broker gerenciado** — filas e tópicos como serviço. É saudável e moderno; **não** é um ESB pesado. Quando alguém na empresa disser "vamos no Service Bus", quase sempre é isto: um broker na nuvem, equivalente em papel ao RabbitMQ/Kafka que veremos.
 
 ### ESB (Enterprise Service Bus) — o barramento "esperto"
-O **ESB clássico** é um barramento **central** que faz muito mais que transportar: roteamento por conteúdo, transformação de formatos, orquestração, adaptação de protocolos — tudo num componente central de mediação (TIBCO, Oracle ESB, IBM Integration Bus). Foi o padrão corporativo dos anos 2000 — e é provavelmente o que a turma viveu no legado da Caixa.
+O **ESB clássico** é um barramento **central** que faz muito mais que transportar: roteamento por conteúdo, transformação de formatos, orquestração, adaptação de protocolos — tudo num componente central de mediação (TIBCO, Oracle ESB, IBM Integration Bus). Foi o padrão corporativo dos anos 2000 — e é provavelmente o que a turma viveu no legado corporativo.
 
 **Por que o movimento de microsserviços reagiu contra o ESB.** Martin Fowler resumiu na frase **"smart endpoints and dumb pipes"** (endpoints espertos, canos burros): a inteligência deve viver **nos serviços**, e o transporte deve ser **simples**. O ESB centraliza a esperteza num só lugar, e isso traz dois problemas que microsserviços tentam evitar: ele vira **SPOF** (cai o barramento, cai a integração toda) e **gargalo de deploy** (toda mudança de roteamento passa por um time central). O ESB não é "errado" — é uma escolha que troca autonomia de times por governança central. Microsserviços fazem a troca oposta.
 
@@ -317,12 +317,12 @@ Diante de "o serviço A precisa que algo aconteça no serviço B", percorra as p
 
 ---
 
-## 9. Ponte com o legado Caixa
+## 9. Ponte com o legado corporativo
 
 Quase tudo desta aula a turma **já viveu**, com outros nomes:
 
 - **IBM MQ / MQSeries / JMS** = o broker. "Aceitar agora, processar depois" nasceu no mundo dos grandes processadores transacionais, não na nuvem. Quem operou filas de entrada/saída do mainframe já fez producer/consumer décadas atrás.
-- **O ESB corporativo** (o "barramento" que muita integração da Caixa atravessa) = a mediação central esperta. Conhecer suas dores — SPOF, fila de deploy no time do barramento, transformação opaca — é entender **por que** os serviços novos (Quarkus/Spring) preferem broker burro + endpoints espertos.
+- **O ESB corporativo** (o "barramento" que muita integração corporativa atravessa) = a mediação central esperta. Conhecer suas dores — SPOF, fila de deploy no time do barramento, transformação opaca — é entender **por que** os serviços novos (Quarkus/Spring) preferem broker burro + endpoints espertos.
 - **Orquestração por job control / stored procedure** = a SAGA orquestrada implícita do mainframe — só que escondida e sem compensação explícita.
 
 O que muda não é o conceito; é o **ferramental e a filosofia de implantação**: do barramento central para o broker gerenciado (Azure Service Bus); da esperteza central para o serviço autônomo; da capacidade fixa para a escala elástica. Quem vem do legado costuma entender o **porquê** mais rápido — porque já sentiu a dor que cada escolha moderna tenta evitar.

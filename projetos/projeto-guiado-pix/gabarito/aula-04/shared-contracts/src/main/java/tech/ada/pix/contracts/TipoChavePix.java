@@ -1,4 +1,4 @@
-package br.com.caixa.pix.contracts;
+package tech.ada.pix.contracts;
 
 /** Tipos de chave PIX de destino suportados. */
 public enum TipoChavePix {

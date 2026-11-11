@@ -1,6 +1,6 @@
 # Requisitos — API de Comprovantes de PIX
 
-Pacote de **elicitação de requisitos** do projeto-guia do módulo **BE-JV-010** (turma Caixa Econômica Federal, nível especialista). Simula a coleta de requisitos de um sistema real e serve de **entrada** para o projeto que o time vai desenvolver.
+Pacote de **elicitação de requisitos** do projeto-guia do módulo **BE-JV-010** (nível especialista). Simula a coleta de requisitos de um sistema real e serve de **entrada** para o projeto que o time vai desenvolver.
 
 ## O sistema, em uma frase
 

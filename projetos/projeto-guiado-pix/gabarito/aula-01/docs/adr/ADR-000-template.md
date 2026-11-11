@@ -3,7 +3,7 @@
 > Copie este arquivo para `ADR-00N-<slug>.md` a cada decisão relevante. ADR bom registra **trade-off**, não descrição.
 
 ## Contexto
-Que problema/força nos obriga a decidir? (requisito, restrição do ambiente Caixa, etc.)
+Que problema/força nos obriga a decidir? (requisito, restrição do ambiente corporativo, etc.)
 
 ## Decisão
 O que decidimos fazer.

@@ -247,7 +247,7 @@ O mesmo método vale para a fatura (cenário 2 da Aula 1). "Fechar a fatura" e "
 
 ---
 
-## 10. Ponte com o legado Caixa
+## 10. Ponte com o legado corporativo
 
 Quem operou mainframe já fez SAGA sem o nome. O **job control** clássico — passo 1 roda; se der erro, um *job* de reversão desfaz; tudo encadeado por JCL — **já era uma SAGA orquestrada**, com o escalonador no papel de maestro. A diferença não é o conceito: é que naquele mundo a compensação era um *job* ad-hoc, escrito caso a caso, sem o vocabulário de "ação compensatória" nem a disciplina de idempotência explícita.
 

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.consulta;
+package tech.ada.pix.consulta;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

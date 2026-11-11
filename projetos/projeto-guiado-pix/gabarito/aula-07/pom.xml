@@ -13,7 +13,7 @@
         -Pplano-b-jvm      pura-JVM: Caffeine, Qpid embarcado, EmbeddedKafka (PADRÃO — piso seguro)
         -Pplano-c-conceitual  event bus in-process; foco em design
 
-      Piso seguro: roda só com Java 21 + Maven + Nexus Caixa (perfil plano-b-jvm, ativo por padrão).
+      Piso seguro: roda só com Java 21 + Maven + Nexus corporativo (perfil plano-b-jvm, ativo por padrão).
       Build:   mvn -s ../../ambiente/settings.xml -Pplano-b-jvm compile
     -->
 
@@ -24,7 +24,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>br.com.caixa.pix</groupId>
+    <groupId>tech.ada.pix</groupId>
     <artifactId>comprovantes-pix</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
@@ -50,7 +50,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>br.com.caixa.pix</groupId>
+                <groupId>tech.ada.pix</groupId>
                 <artifactId>shared-contracts</artifactId>
                 <version>${project.version}</version>
             </dependency>

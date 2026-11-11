@@ -240,7 +240,7 @@ Os passos 2 e 4 juntos são a prova que importa: a falha permanente foi **isolad
 
 ---
 
-## 9. Ponte com o legado Caixa
+## 9. Ponte com o legado corporativo
 
 Quem operou processamento **batch** no mainframe já conhece a DLQ por outro nome: a **"fila de exceção"**, o **"arquivo de rejeitados"**, o dataset de registros que o job não conseguiu processar e separou para tratamento posterior. O conceito é idêntico — não descartar o que falhou, separá-lo para análise — e a maturidade operacional de "todo dia alguém olha os rejeitados" é exatamente a cultura que a DLQ moderna exige.
 

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
 import au.com.dius.pact.provider.junit5.HttpTestTarget;
 import au.com.dius.pact.provider.junit5.PactVerificationContext;
@@ -6,9 +6,9 @@ import au.com.dius.pact.provider.junit5.PactVerificationInvocationContextProvide
 import au.com.dius.pact.provider.junitsupport.Provider;
 import au.com.dius.pact.provider.junitsupport.State;
 import au.com.dius.pact.provider.junitsupport.loader.PactFolder;
-import br.com.caixa.pix.contracts.ComprovanteRequest;
-import br.com.caixa.pix.contracts.TipoChavePix;
-import br.com.caixa.pix.contracts.TipoDocumento;
+import tech.ada.pix.contracts.ComprovanteRequest;
+import tech.ada.pix.contracts.TipoChavePix;
+import tech.ada.pix.contracts.TipoDocumento;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.TestTemplate;
 import org.junit.jupiter.api.extension.ExtendWith;

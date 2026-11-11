@@ -18,7 +18,7 @@ Não é avaliado — é a demonstração canônica dos padrões que o **projeto 
 | `plano-b-jvm` **(padrão)** | só Java 21+Maven+Nexus | Caffeine | Qpid embarcado | EmbeddedKafka |
 | `plano-c-conceitual` | nem artefato no Nexus | ConcurrentHashMap | `ApplicationEventPublisher` / `BlockingQueue` | idem |
 
-> **Piso seguro:** `plano-b-jvm` é ativo por padrão e **não exige Docker nem internet** — só o Nexus Caixa para baixar artefatos.
+> **Piso seguro:** `plano-b-jvm` é ativo por padrão e **não exige Docker nem internet** — só o Nexus corporativo para baixar artefatos.
 
 ## Como rodar
 ```bash

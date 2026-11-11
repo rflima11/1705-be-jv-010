@@ -1,6 +1,6 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
-import br.com.caixa.pix.contracts.ComprovanteRequest;
+import tech.ada.pix.contracts.ComprovanteRequest;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 

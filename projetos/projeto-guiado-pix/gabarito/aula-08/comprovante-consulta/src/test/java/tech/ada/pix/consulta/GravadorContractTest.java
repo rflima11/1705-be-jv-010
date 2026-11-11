@@ -1,4 +1,4 @@
-package br.com.caixa.pix.consulta;
+package tech.ada.pix.consulta;
 
 import au.com.dius.pact.consumer.MockServer;
 import au.com.dius.pact.consumer.dsl.PactDslJsonBody;

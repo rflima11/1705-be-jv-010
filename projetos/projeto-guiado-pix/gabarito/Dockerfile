@@ -18,7 +18,7 @@ FROM maven:3.9-eclipse-temurin-21 AS build
 WORKDIR /src
 COPY . .
 ARG MODULE
-# Ambiente local do docente resolve do Maven Central (sem o settings.xml do Nexus Caixa).
+# Ambiente local do docente resolve do Maven Central (sem o settings.xml do Nexus corporativo).
 RUN mvn -q -Pplano-a-docker -pl ${MODULE} -am clean package -DskipTests
 
 # ---- runtime ----

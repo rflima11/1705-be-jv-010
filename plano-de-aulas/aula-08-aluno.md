@@ -209,7 +209,7 @@ Os três cenários com a **mesma** configuração. Isso é "decidir como falhar 
 
 ---
 
-## 9. Ponte com o legado Caixa
+## 9. Ponte com o legado corporativo
 
 Quem operou o batch noturno já fez resiliência sem o vocabulário moderno. O **"reprocessamento do job que deu erro"** é o ancestral do retry; os **"limites de retentativa"** configurados no agendador de jobs são o teto de tentativas; o **"arquivo de rejeitados"** que sobrava para análise no dia seguinte é a **DLT** dos nossos dias. Até o circuit breaker tem parente lá: o operador que, vendo um sistema downstream fora do ar, **suspendia o job** em vez de deixá-lo falhar a noite inteira contra uma dependência morta — exatamente o "falhar rápido" automatizado.
 

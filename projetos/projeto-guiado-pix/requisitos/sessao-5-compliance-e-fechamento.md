@@ -36,7 +36,7 @@
 
 **Roberto:** Helena, isso impacta meu custo de armazenamento, mas eu entendo que é inegociável. Cinco anos é cinco anos.
 
-**Helena:** Inegociável. É o Bacen, não sou eu. E tem uma quarta camada, mais leve, sobre **minimização e acesso**: o sistema só deve expor o dado pessoal a quem tem necessidade legítima — o próprio cliente, o atendente autorizado. Não é pra qualquer um dentro do banco sair consultando comprovante alheio. Mas como vocês já vão ter a trilha de auditoria, isso fica controlado. Eu não vou abrir controle de acesso fino agora porque sei que tem o login corporativo da Caixa por trás; só registro o princípio.
+**Helena:** Inegociável. É o Bacen, não sou eu. E tem uma quarta camada, mais leve, sobre **minimização e acesso**: o sistema só deve expor o dado pessoal a quem tem necessidade legítima — o próprio cliente, o atendente autorizado. Não é pra qualquer um dentro do banco sair consultando comprovante alheio. Mas como vocês já vão ter a trilha de auditoria, isso fica controlado. Eu não vou abrir controle de acesso fino agora porque sei que tem o login corporativo do banco por trás; só registro o princípio.
 
 **Daniel:** Faz sentido. O princípio fica: dado pessoal sensível, acesso só por necessidade legítima, e tudo auditado.
 

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.consulta;
+package tech.ada.pix.consulta;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

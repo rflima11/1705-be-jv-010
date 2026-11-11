@@ -1,6 +1,6 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
-import br.com.caixa.pix.contracts.ComprovanteGravadoEvent;
+import tech.ada.pix.contracts.ComprovanteGravadoEvent;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 

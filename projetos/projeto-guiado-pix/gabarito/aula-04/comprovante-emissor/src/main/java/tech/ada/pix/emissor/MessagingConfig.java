@@ -1,4 +1,4 @@
-package br.com.caixa.pix.emissor;
+package tech.ada.pix.emissor;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.Queue;

@@ -214,7 +214,7 @@ public class ConsultaComprovante {
 
 ---
 
-## 9. Ponte com o legado Caixa
+## 9. Ponte com o legado corporativo
 
 Muita aplicação legado já "cacheia" — só que mal. O padrão clássico é cachear em **tabela de banco** (uma tabela "de apoio" lida no lugar da consulta cara) ou na **memória do *app server*** com **sessão pegajosa**. Funciona maravilhosamente bem... até você precisar da **segunda instância**. Aí as visões divergem (cada *app server* com seu cache), a invalidação numa não chega na outra, e aparece o bug fantasma "funciona num servidor e não no outro".
 

@@ -108,7 +108,7 @@ Quando você leva a ideia do log retido até o fim, chega ao **event sourcing**:
 
 Por que isso é poderoso:
 
-- **Auditoria nativa.** O log *é* a trilha de auditoria. Para um sistema financeiro como o da Caixa, poder responder "por que este comprovante está neste estado?" reproduzindo cada fato é um requisito, não um luxo.
+- **Auditoria nativa.** O log *é* a trilha de auditoria. Para um sistema financeiro, poder responder "por que este comprovante está neste estado?" reproduzindo cada fato é um requisito, não um luxo.
 - **Reconstrução de estado.** Se a base de leitura corrompe ou você precisa de uma nova visão dos dados, reproduz os eventos e reconstrói. O passado é reproduzível.
 - **Múltiplas projeções do mesmo log.** Notificação, antifraude e BI são, cada um, uma **projeção diferente** do mesmo fluxo de eventos. Uma nova pergunta de negócio vira uma nova projeção — sem migração de schema.
 
@@ -219,7 +219,7 @@ Esse é o ganho concreto da arquitetura orientada a eventos: **o sistema cresce 
 
 ---
 
-## 8. Ponte com o legado Caixa
+## 8. Ponte com o legado corporativo
 
 Quem operou mainframe já fez isto sem o nome. O **"arquivo de movimento do dia"** — aquele arquivo sequencial que vários jobs noturnos liam, cada um fazendo sua parte (um atualizava saldo, outro gerava relatório, outro alimentava o data warehouse) — **já era um log de eventos**. Vários consumidores, o mesmo arquivo, ninguém apagava a parte do outro, e o produtor (o sistema online do dia) não sabia quem eram os jobs noturnos.
 

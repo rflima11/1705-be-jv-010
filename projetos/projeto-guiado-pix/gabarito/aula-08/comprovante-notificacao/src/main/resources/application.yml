@@ -12,8 +12,8 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: br.com.caixa.pix.contracts
-        spring.json.value.default.type: br.com.caixa.pix.contracts.ComprovanteGravadoEvent
+        spring.json.trusted.packages: tech.ada.pix.contracts
+        spring.json.value.default.type: tech.ada.pix.contracts.ComprovanteGravadoEvent
     producer:   # @RetryableTopic publica nos tópicos de retry/DLT
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.springframework.kafka.support.serializer.JsonSerializer

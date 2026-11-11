@@ -1,6 +1,6 @@
-package br.com.caixa.pix.notificacao;
+package tech.ada.pix.notificacao;
 
-import br.com.caixa.pix.contracts.ComprovanteGravadoEvent;
+import tech.ada.pix.contracts.ComprovanteGravadoEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.annotation.DltHandler;

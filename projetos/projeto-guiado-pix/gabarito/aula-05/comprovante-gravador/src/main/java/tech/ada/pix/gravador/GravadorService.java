@@ -1,7 +1,7 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
-import br.com.caixa.pix.contracts.ComprovanteView;
-import br.com.caixa.pix.contracts.GravarComprovanteCommand;
+import tech.ada.pix.contracts.ComprovanteView;
+import tech.ada.pix.contracts.GravarComprovanteCommand;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

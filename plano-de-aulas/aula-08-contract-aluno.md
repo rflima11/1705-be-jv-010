@@ -261,13 +261,13 @@ A heurística: se escrever o contract test deu trabalho, provavelmente o problem
 
 ---
 
-## 11. Ponte com o legado Caixa
+## 11. Ponte com o legado corporativo
 
 Contract testing não é um conceito novo — é a versão **executável** de algo que o mundo corporativo sempre teve: o **contrato de interface**. Em sistemas legados, o acordo entre dois sistemas vivia num **documento Word, numa planilha de layout de arquivo posicional ou num PDF de "especificação de interface"** — "as posições 1 a 11 são o CPF, 12 a 26 o valor com duas casas decimais", e assim por diante. Quem integrou com mainframe via arquivo CNAB, EDI ou *copybook* conhece bem esse documento.
 
 O problema do contrato-em-documento é que ele **não roda**. Ele envelhece, diverge do código, e ninguém revalida — até o dia em que o sistema A muda o layout, esquece de avisar o sistema B, e a quebra aparece em produção (exatamente o pesadelo da seção 1, só que com 30 anos a mais). O *batch* noturno rejeita o arquivo inteiro, ou pior, lê o campo errado silenciosamente.
 
-Contract testing pega esse mesmo acordo e o torna **código que roda no pipeline**: o "layout de interface" vira o pact file, e a "conferência manual do layout" vira a verificação automática no CI. Para o veterano de integrações Caixa, a mensagem é direta — **é o mesmo contrato de interface de sempre, só que agora ele falha no seu build, não na produção do outro time.** Quem já desenhou layout de arquivo CNAB entende contract testing em cinco minutos; só muda o ferramental.
+Contract testing pega esse mesmo acordo e o torna **código que roda no pipeline**: o "layout de interface" vira o pact file, e a "conferência manual do layout" vira a verificação automática no CI. Para o veterano de integrações corporativas, a mensagem é direta — **é o mesmo contrato de interface de sempre, só que agora ele falha no seu build, não na produção do outro time.** Quem já desenhou layout de arquivo CNAB entende contract testing em cinco minutos; só muda o ferramental.
 
 ---
 

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.emissor;
+package tech.ada.pix.emissor;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -61,13 +61,13 @@ docker compose down -v               # ao terminar
 - **Verificado:** todas as aulas **compilam** no perfil `plano-b-jvm` (aula 8 em `test-compile`).
 - **Não verificado em runtime aqui:** o fluxo ponta a ponta das aulas 4–7 exige **broker no ar**
   (Qpid/EmbeddedKafka in-JVM). O código está correto e idiomático; subir os brokers depende de o
-  **Nexus Caixa publicar os artefatos** (ver nota abaixo). Se faltarem, o tema cai no `plano-c-conceitual`.
+  **Nexus corporativo publicar os artefatos** (ver nota abaixo). Se faltarem, o tema cai no `plano-c-conceitual`.
 
 ## ⚠️ Nota de ambiente — confirmado Plano B (sem Docker); pendência no Nexus
 A Aula 1 confirmou **sem Docker e sem sandbox** → o gabarito roda no perfil **`plano-b-jvm`** (pura-JVM);
 `plano-a-docker` fica só como **referência de produção**, não é usado nesta turma. **Pendência aberta:**
 o `org.apache.qpid:qpid-broker` arrasta **`com.sleepycat:je`** (store BDB, licença restrita) que **pode
-não existir no Nexus Caixa**. Já **excluímos** essa dependência nos `pom.xml` (Qpid roda com **store em
+não existir no Nexus corporativo**. Já **excluímos** essa dependência nos `pom.xml` (Qpid roda com **store em
 memória**, suficiente para um broker efêmero de aula). **Falta confirmar no Nexus** que o `qpid-broker`
 (sem o `je`) e o `spring-kafka-test` resolvem — ver `ambiente/relatorio-semana-0.md` e
 `ambiente/checklist-semana-0.md` (na raiz do módulo).

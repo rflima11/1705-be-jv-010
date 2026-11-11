@@ -1,6 +1,6 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
-import br.com.caixa.pix.contracts.GravarComprovanteCommand;
+import tech.ada.pix.contracts.GravarComprovanteCommand;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

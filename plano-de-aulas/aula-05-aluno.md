@@ -239,7 +239,7 @@ Mantenha **síncrono** quando:
 
 ---
 
-## 9. Ponte com o legado Caixa
+## 9. Ponte com o legado corporativo
 
 Quem operou **IBM MQ (MQSeries) com JMS** já fez producer/consumer décadas atrás — e fez bem. As filas de entrada e saída do mainframe, os processos batch que liam de uma fila e escreviam em outra, o desacoplamento entre o CICS que aceitava e o job noturno que processava: tudo isso **é** comunicação assíncrona. O conceito de "aceitar agora, processar depois" nasceu no mundo dos grandes processadores transacionais, não na nuvem.
 

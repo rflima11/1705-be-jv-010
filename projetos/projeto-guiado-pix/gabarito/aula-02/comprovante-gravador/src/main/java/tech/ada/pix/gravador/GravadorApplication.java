@@ -1,4 +1,4 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

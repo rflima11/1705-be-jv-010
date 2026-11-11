@@ -1,6 +1,6 @@
-package br.com.caixa.pix.emissor;
+package tech.ada.pix.emissor;
 
-import br.com.caixa.pix.contracts.GravarComprovanteCommand;
+import tech.ada.pix.contracts.GravarComprovanteCommand;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;

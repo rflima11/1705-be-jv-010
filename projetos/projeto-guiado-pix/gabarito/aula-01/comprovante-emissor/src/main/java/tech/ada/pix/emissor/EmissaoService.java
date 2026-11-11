@@ -1,7 +1,7 @@
-package br.com.caixa.pix.emissor;
+package tech.ada.pix.emissor;
 
-import br.com.caixa.pix.contracts.ComprovanteAceito;
-import br.com.caixa.pix.contracts.ComprovanteRequest;
+import tech.ada.pix.contracts.ComprovanteAceito;
+import tech.ada.pix.contracts.ComprovanteRequest;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

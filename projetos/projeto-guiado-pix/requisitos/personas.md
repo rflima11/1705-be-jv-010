@@ -2,7 +2,7 @@
 
 Fichas das pessoas que participam das reuniões de elicitação de requisitos. Use-as para entender de onde vem cada fala nas transcrições e por que cada uma defende o que defende. Mantêm voz consistente ao longo das cinco sessões.
 
-> Contexto institucional: todos são colaboradores (ou prestadores) da Caixa Econômica Federal, lotados na Diretoria de Meios de Pagamento e áreas correlatas. As reuniões ocorrem em abril de 2026, semanais, via Microsoft Teams.
+> Contexto institucional: todos são colaboradores (ou prestadores) de um grande banco brasileiro, lotados na Diretoria de Meios de Pagamento e áreas correlatas. As reuniões ocorrem em abril de 2026, semanais, via Microsoft Teams.
 
 ---
 
@@ -23,7 +23,7 @@ Fichas das pessoas que participam das reuniões de elicitação de requisitos. U
 ## Dra. Helena Sasaki — Especialista em Compliance e Regulação (Bacen / LGPD)
 
 - **Papel:** guardiã regulatória. Valida que o sistema respeita exigências do Banco Central, LGPD e políticas internas de auditoria.
-- **Objetivos:** garantir retenção correta, trilha de auditoria, tratamento adequado de dado pessoal sensível, base legal/consentimento. Evitar exposição da Caixa a sanção regulatória.
+- **Objetivos:** garantir retenção correta, trilha de auditoria, tratamento adequado de dado pessoal sensível, base legal/consentimento. Evitar exposição do banco a sanção regulatória.
 - **Jeito de falar:** cautelosa, precisa, cita normas e prazos com exatidão. "Pela nossa política de retenção...", "isso é dado pessoal, então...", "preciso que isso fique registrado em ata". Não tem pressa: prefere travar agora a remediar depois.
 - **Vieses:** conservadora; na dúvida, exige o controle mais rígido. Pode parecer freio para Roberto. Insiste em números exatos de retenção e em registro de quem acessou o quê.
 

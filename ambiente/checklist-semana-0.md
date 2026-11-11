@@ -1,4 +1,4 @@
-# Checklist Semana 0 — Descoberta do Ambiente (BE-JV-010 · Caixa)
+# Checklist Semana 0 — Descoberta do Ambiente (BE-JV-010)
 
 > ⚠️ **Status pós-Aula 1 (22/06):** não rodou antes da Aula 1 — foi **iniciado ao vivo** e o restante virou **tarefa de casa dos alunos**. Já resolvido: **sem Docker/sandbox → Plano B** (seção 2). **Pendente e bloqueante:** resolução dos artefatos de fallback no Nexus (seção 3). Consolidar tudo em `relatorio-semana-0.md`.
 
@@ -21,7 +21,7 @@
 
 ## 2. Docker / contêineres — ✅ RESOLVIDO (sem Docker → Plano B)
 
-Confirmado na Aula 1: **não há Docker nem sandbox** na rede Caixa. Plano A descartado; **Plano B (pura-JVM) é o piso**. Seção mantida só como registro.
+Confirmado na Aula 1: **não há Docker nem sandbox** na rede corporativa. Plano A descartado; **Plano B (pura-JVM) é o piso**. Seção mantida só como registro.
 
 | # | Verificação | Resultado |
 |---|---|---|
@@ -63,7 +63,7 @@ Rodar `mvn -s settings.xml dependency:get -Dartifact=<GAV>` para cada um. **Marq
 | 5.1 | **Breakout rooms** liberados | tempo de projeto em grupo na 2ª metade da aula |
 | 5.2 | Aluno compartilha tela / recebe controle | mob/pair programming |
 | 5.3 | Onde os grupos versionam código (GitLab/Bitbucket interno?) | entrega avaliável do projeto final |
-| 5.4 | IDE na máquina Caixa (IntelliJ/VS Code/Eclipse) + plugins | live coding |
+| 5.4 | IDE na máquina corporativa (IntelliJ/VS Code/Eclipse) + plugins | live coding |
 | 5.5 | Gravação da aula permitida | resiliência (rede caindo) e revisão assíncrona |
 
 ---

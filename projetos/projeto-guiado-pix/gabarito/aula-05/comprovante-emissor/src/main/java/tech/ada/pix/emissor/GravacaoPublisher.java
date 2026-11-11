@@ -1,6 +1,6 @@
-package br.com.caixa.pix.emissor;
+package tech.ada.pix.emissor;
 
-import br.com.caixa.pix.contracts.GravarComprovanteCommand;
+import tech.ada.pix.contracts.GravarComprovanteCommand;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
 

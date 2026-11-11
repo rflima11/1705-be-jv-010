@@ -1,6 +1,6 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
-import br.com.caixa.pix.contracts.GravarComprovanteCommand;
+import tech.ada.pix.contracts.GravarComprovanteCommand;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

@@ -1,6 +1,6 @@
 # Planejamento de Aulas — 1705-be-jv-010
 
-Este repositório contém o planejamento de aulas do projeto Caixa Escalação Tech (turma 1705 - módulo be-jv-010). O objetivo é organizar materiais, cronogramas e recursos pedagógicos usados durante o desenvolvimento do curso.
+Este repositório contém o planejamento de aulas da turma 1705 (módulo be-jv-010). O objetivo é organizar materiais, cronogramas e recursos pedagógicos usados durante o desenvolvimento do curso.
 
 Conteúdo
 - Plano de aulas por encontro

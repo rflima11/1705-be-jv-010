@@ -20,7 +20,7 @@ A Aula 1 confirmou **sem Docker e sem sandbox** → **`plano-b-jvm` é o perfil 
 | `plano-c-conceitual` | se faltar artefato no Nexus | ConcurrentHashMap | `ApplicationEventPublisher` / `BlockingQueue` | idem |
 | `plano-a-docker` | *referência de produção (não usado nesta turma)* | Redis | RabbitMQ | Kafka |
 
-> **Piso desta turma:** `plano-b-jvm` é ativo por padrão e **não exige Docker nem internet** — só o Nexus Caixa para baixar artefatos.
+> **Piso desta turma:** `plano-b-jvm` é ativo por padrão e **não exige Docker nem internet** — só o Nexus corporativo para baixar artefatos.
 
 ## Como rodar
 ```bash

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.contracts;
+package tech.ada.pix.contracts;
 
 import java.time.LocalDateTime;
 import java.util.UUID;

@@ -1,4 +1,4 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.amqp.core.Queue;

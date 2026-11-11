@@ -41,7 +41,7 @@
 
 **Daniel:** Seguro. Só planto a sementinha: se a gente vai ser lido muito mais do que escrito, e em volume de banco grande, a forma como a gente guarda e devolve isso importa demais.
 
-**Roberto:** Falando em volume — qual é a volumetria que a gente está imaginando? Porque PIX na Caixa não é pouca coisa.
+**Roberto:** Falando em volume — qual é a volumetria que a gente está imaginando? Porque PIX aqui no banco não é pouca coisa.
 
 **Daniel:** Não é. E tem o agravante dos **picos**. Tem dia que o volume é X, e tem dia que é cinco, dez vezes X. Quais? Dia de pagamento de salário, dia de benefício social, e o clássico: décimo terceiro. Nessas datas o número de PIX explode, e por consequência o número de comprovante emitido e — algumas semanas depois — o número de consulta também sobe, porque é quando todo mundo quer comprovar pra alguém que pagou.
 

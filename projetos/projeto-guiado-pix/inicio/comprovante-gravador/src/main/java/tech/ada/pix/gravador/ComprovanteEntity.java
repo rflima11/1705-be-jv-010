@@ -1,4 +1,4 @@
-package br.com.caixa.pix.gravador;
+package tech.ada.pix.gravador;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

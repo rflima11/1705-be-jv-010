@@ -1,4 +1,4 @@
-package br.com.caixa.pix.notificacao;
+package tech.ada.pix.notificacao;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,6 +1,6 @@
-package br.com.caixa.pix.consulta;
+package tech.ada.pix.consulta;
 
-import br.com.caixa.pix.contracts.ComprovanteView;
+import tech.ada.pix.contracts.ComprovanteView;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
