@@ -56,13 +56,13 @@ Rodar `mvn -s settings.xml dependency:get -Dartifact=<GAV>` para cada um. **Marq
 | 4.2 | Broker local escuta porta | Qpid/Kafka embarcado sobe em porta alta | Plano B |
 | 4.3 | Sites externos bloqueados? | tentar start.spring.io, Maven Central, GitHub | confirma "tudo via Nexus" + material offline |
 
-## 5. Colaboração e didática no Teams (bloqueante p/ projeto em grupo)
+## 5. Colaboração e didática no Teams (bloqueante p/ o projeto final)
 
 | # | Verificação | Importa para |
 |---|---|---|
-| 5.1 | **Breakout rooms** liberados | tempo de projeto em grupo na 2ª metade da aula |
+| 5.1 | **Breakout rooms** liberados | tempo de projeto final na 2ª metade da aula |
 | 5.2 | Aluno compartilha tela / recebe controle | mob/pair programming |
-| 5.3 | Onde os grupos versionam código (GitLab/Bitbucket interno?) | entrega avaliável do projeto final |
+| 5.3 | Onde cada pessoa versiona o código (GitLab/Bitbucket interno?) | entrega avaliável do projeto final |
 | 5.4 | IDE na máquina corporativa (IntelliJ/VS Code/Eclipse) + plugins | live coding |
 | 5.5 | Gravação da aula permitida | resiliência (rede caindo) e revisão assíncrona |
 
@@ -76,6 +76,6 @@ Rodar `mvn -s settings.xml dependency:get -Dartifact=<GAV>` para cada um. **Marq
 | RabbitMQ / filas | | |
 | Kafka / tópicos | | |
 | Contract test (PACT) | | |
-| Projeto em grupo (Teams) | | |
+| Projeto final (Teams) | | |
 
 > **Decisão de fallback padrão (se a Semana 0 não acontecer a tempo):** assumir **Plano B** (pura-JVM) em tudo — roda em qualquer máquina com Java 21 + Maven + Nexus, sem depender de Docker. É o piso seguro.

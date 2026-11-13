@@ -6,7 +6,7 @@ Uma sugestão para a hora do projeto nesta aula: deixar tudo pronto para a banca
 
 1. **Termine o README:** como rodar, passo a passo. Depois siga o seu próprio README num terminal novo, para ver se funciona.
 2. **Revise os ADRs.** Cada um precisa dizer o que mais você considerou e por que escolheu o que escolheu.
-3. **Ensaie a banca:** mostre o projeto, explique as decisões e conte como usou a IA.
+3. **Ensaie a banca com o relógio:** no máximo 10 minutos, já contando as perguntas. Mostre o projeto, explique as decisões e conte como usou a IA.
 4. **Faça o último commit e push.**
 
 ## Pronto quando

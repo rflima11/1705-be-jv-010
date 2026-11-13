@@ -33,9 +33,9 @@ Spring Boot 3 (Java 21), Maven multi-módulo. **Programar contra as abstrações
 > A definição de qual plano vale por tema sai da **Semana 0** (`ambiente/checklist-semana-0.md`).
 
 ## Papel didático
-- É a **fonte da verdade** dos padrões: o grupo pode (e deve) se inspirar, **sem copiar tema**.
+- É a **fonte da verdade** dos padrões: cada pessoa pode (e deve) se inspirar, **sem copiar tema**.
 - Cada incremento fica em um **branch/tag por aula**, pronto para colar caso a demo ao vivo trave (resiliência de rede no Teams).
-- Ao final, o repositório PIX é também o **exemplo de referência** contra o qual o grupo compara sua própria arquitetura.
+- Ao final, o repositório PIX é também o **exemplo de referência** contra o qual cada pessoa compara a própria arquitetura.
 
 ## Estrutura sugerida do repositório-semente
 ```
@@ -46,7 +46,7 @@ projeto-guiado-pix/
 ├── comprovante-consulta/        # GET com cache + retries
 ├── shared-contracts/            # DTOs/eventos compartilhados + pacts
 └── docs/
-    └── adr/                     # decisões tomadas ao vivo (exemplo p/ os grupos)
+    └── adr/                     # decisões tomadas ao vivo (exemplo p/ o projeto final)
 ```
 
 > O esqueleto Maven (poms + módulos vazios + profiles A/B/C) é o entregável do Turno 3 do plano de trabalho — produzir após validar a Semana 0.

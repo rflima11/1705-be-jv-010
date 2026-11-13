@@ -4,7 +4,7 @@
 |---|---|
 | **Formato** | individual: cada pessoa faz o seu |
 | **Tema** | livre: você escolhe |
-| **Apresentação** | banca de uns 20 minutos por pessoa. O último dia é **23/11/2026** |
+| **Apresentação** | banca de no máximo 10 minutos por pessoa, já contando as perguntas. O último dia é **23/11/2026** |
 
 ---
 
@@ -72,7 +72,7 @@ Faça commits aos poucos, não tudo no último dia. Para isso, há uma sugestão
 
 ## 5. A banca
 
-Em uns 20 minutos:
+No máximo 10 minutos, já contando as perguntas:
 
 1. Mostre o projeto rodando, dizendo o perfil (A, B ou C). No perfil C, mostre o desenho.
 2. Explique por que fez assim.

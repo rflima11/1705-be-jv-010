@@ -34,7 +34,7 @@ Uma API que **emite e consulta comprovantes de PIX já efetivados**. Ela **não 
 
 ## Relação com o projeto-guia
 
-Estes requisitos alimentam o **projeto guiado em aula** (`../`), construído ao vivo ao longo das 8 aulas, e servem de referência para o **projeto final em grupo**. O arco de requisitos mapeia, de forma natural, os padrões trabalhados no módulo:
+Estes requisitos alimentam o **projeto guiado em aula** (`../`), construído ao vivo ao longo das 8 aulas, e servem de referência para o **projeto final** (individual). O arco de requisitos mapeia, de forma natural, os padrões trabalhados no módulo:
 
 - DDD e contextos delimitados (emissão · gravação · consulta);
 - aceite assíncrono e processamento desacoplado;

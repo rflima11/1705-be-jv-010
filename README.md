@@ -11,9 +11,9 @@ Estrutura
 - README.md — visão geral (este arquivo)
 - /ambiente — checklist de configuração
 - /plano-de-aulas — material por encontro (slides e material do aluno)
-- /projetos — código do projeto-guia com evolução por aula e descrição do projeto final em grupo
+- /projetos — código do projeto-guia com evolução por aula e descrição do projeto final (individual)
 
 Como usar
 1. Acesse a pasta /ambiente para verificar o checklist de configuração do ambiente.
 2. Acesse /plano-de-aulas a cada aula para ler cada conteúdo antes das aulas, a fim de praticar juntos a PBL, com foco nas discussões e práticas. 
-3. Acompanhe o projeto-guia sendo desenvolvido a cada aula e evoluindo, como referência para o projeto final do seu grupo.
+3. Acompanhe o projeto-guia sendo desenvolvido a cada aula e evoluindo, como referência para o seu projeto final.

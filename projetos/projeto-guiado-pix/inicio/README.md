@@ -52,5 +52,5 @@ comprovantes-pix/
 ├── comprovante-consulta/      # GET com cache + fallback
 └── docs/
     ├── arquitetura.md         # diagrama + mapa de incrementos
-    └── adr/                   # decisões (modelo p/ os grupos do projeto final)
+    └── adr/                   # decisões (modelo p/ o projeto final)
 ```

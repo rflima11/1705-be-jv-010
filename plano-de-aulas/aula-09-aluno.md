@@ -6,9 +6,9 @@
 
 ## 1. O que é a banca e o que ela avalia
 
-A banca é uma **defesa de arquitetura de nível especialista (Nível III)**. Cada grupo apresenta o projeto final, demonstra o que roda e — o ponto central — **justifica as escolhas** sob arguição. O que está em jogo não é "vocês implementaram microsserviços?", e sim "vocês entendem **por que** cortaram assim, e sabem defender o que abriram mão?".
+A banca é uma **defesa de arquitetura de nível especialista (Nível III)**. Cada pessoa apresenta o seu projeto final, demonstra o que roda e — o ponto central — **justifica as escolhas** sob arguição. O que está em jogo não é "vocês implementaram microsserviços?", e sim "vocês entendem **por que** cortaram assim, e sabem defender o que abriram mão?".
 
-A regra que organiza tudo, e que você precisa internalizar: **a banca avalia a decisão arquitetural, não a infraestrutura que coube ao time.** Um grupo que rodou tudo no **Plano C** (sem Docker, tudo em processo) e **justificou bem** cada escolha pode tirar nota máxima. Um grupo que subiu Kafka, Redis e cinco contêineres mas não sabe explicar **por que** usou tópico em vez de fila tira menos. O módulo inteiro foi construído sobre esse princípio anti-ambiente — a banca é onde ele se realiza.
+A regra que organiza tudo, e que você precisa internalizar: **a banca avalia a decisão arquitetural, não a infraestrutura que você tinha.** Quem rodou tudo no **Plano C** (sem Docker, tudo em processo) e **justificou bem** cada escolha pode tirar nota máxima. Quem subiu Kafka, Redis e cinco contêineres mas não sabe explicar **por que** usou tópico em vez de fila tira menos. O módulo inteiro foi construído sobre esse princípio anti-ambiente — a banca é onde ele se realiza.
 
 Isso muda o que você prepara. Não gaste a apresentação provando que o ambiente subiu; gaste-a provando que **a decisão foi consciente**. A frase que resume a postura esperada: *"escolhemos X, abrindo mão de Y, porque no nosso contexto Z pesa mais."* Decisão sem trade-off declarado é o que a banca mais penaliza.
 
@@ -64,17 +64,18 @@ Tenha um ADR para **cada decisão que a rubrica cobra**: corte de contextos (cri
 
 ---
 
-## 4. Estrutura da apresentação (8–12 min)
+## 4. Estrutura da apresentação (no máximo 10 min, com a arguição)
 
-O tempo é curto e a arguição vem depois — não desperdice minutos provando que o ambiente subiu. Sugestão de divisão:
+O tempo é curto: **no máximo 10 minutos por pessoa, já contando a arguição**. Não desperdice minutos provando que o ambiente subiu. Sugestão de divisão:
 
 | Bloco | Tempo | O que mostrar |
 |---|:---:|---|
-| **Problema e domínio** | ~1 min | que sistema vocês construíram e por quê (não a tecnologia, o problema) |
-| **Mapa de contextos** | ~2 min | os bounded contexts e a justificativa do corte (Aula 1) |
-| **Demo do que roda** | ~3–4 min | declare o **perfil A/B/C** e os *fallbacks*; mostre o fluxo, não cada tela |
-| **Defesa das decisões** | ~3 min | SAGA × evento, cache, garantia de entrega, resiliência, contratos — apontando os **ADRs** |
-| **Uso crítico de IA** | ~1 min | como usaram IA no design/dev e o que **validaram à mão** |
+| **Problema e domínio** | ~1 min | que sistema você construiu e por quê (não a tecnologia, o problema) |
+| **Mapa de contextos** | ~1 min | os bounded contexts e a justificativa do corte (Aula 1) |
+| **Demo do que roda** | ~2 min | declare o **perfil A/B/C** e os *fallbacks*; mostre o fluxo, não cada tela |
+| **Defesa das decisões** | ~2 min | SAGA × evento, cache, garantia de entrega, resiliência, contratos — apontando os **ADRs** |
+| **Uso crítico de IA** | ~1 min | como você usou IA no design/dev e o que **validou à mão** |
+| **Arguição** | ~3 min | as perguntas da banca (seção 5) |
 
 Princípios de quem apresenta bem nesta banca:
 
@@ -123,7 +124,7 @@ A avaliação — pela banca **e** pela leitura via Claude pós-banca — consid
 - [ ] **`docs/adr/`** — um ADR por decisão, com **alternativas consideradas e trade-offs reais**, não descrição (seção 3).
 - [ ] **`docs/arquitetura.md`** — mapa de bounded contexts + fluxo de filas/tópicos/eventos.
 - [ ] **CORE completo:** ≥2 serviços, **bases segregadas** (sem acoplamento por dados), 1 fila com consumidor **idempotente**, 1 **cache**, 1 **contract test** executável (Aula 8).
-- [ ] **Opcionais** entregues conforme o tamanho do grupo (SAGA/outbox, DLQ, *circuit breaker*, message pact...).
+- [ ] **Opcionais** entregues, se sobrou tempo (SAGA/outbox, DLQ, *circuit breaker*, message pact...).
 - [ ] **`mvn verify` passando** no perfil declarado — incluindo a verificação do pact.
 - [ ] **Commits ao longo das semanas** — evidência de processo, não um *dump* único na véspera.
 
